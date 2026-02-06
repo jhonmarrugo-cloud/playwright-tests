@@ -1,0 +1,27 @@
+# Playwright Test Automation
+
+Proyecto de automatización End-to-End usando **Playwright** y **JavaScript**.
+
+## 🚀 Tecnologías
+
+* Playwright
+* Node.js
+* JavaScript
+
+## ▶️ Instalación
+
+```bash
+npm install
+npx playwright install
+```
+
+## ▶️ Ejecutar tests
+
+```bash
+npx playwright test
+```
+
+## 📁 Estructura
+
+* tests → casos de prueba
+* playwright.config.js → configuración
