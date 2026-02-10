@@ -11,16 +11,17 @@ module.exports = defineConfig({
       testMatch: /.*\.setup\.spec\.js/,
       use: {
         browserName: 'chromium',
-        headless: false, // 👈 MUY IMPORTANTE
+        headless: false,
       },
     },
     {
       name: 'chromium',
+      testIgnore: /.*\.setup\.spec\.js/,
       use: {
         browserName: 'chromium',
         storageState: 'storageState.json',
+        headless: false,
       },
-      dependencies: ['setup'],
     },
   ],
 });
