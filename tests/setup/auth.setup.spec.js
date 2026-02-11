@@ -7,7 +7,7 @@ test('login', async ({ page }) => {
   await page.goto('https://clients.onewrapp.com');
 
   // 👇 loguéate manualmente
-  await page.waitForURL('**/companies/companies');
+  await page.waitForURL('**/companies');
 
   await page.context().storageState({
     path: 'storageState.json'
