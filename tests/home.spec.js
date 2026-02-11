@@ -17,6 +17,4 @@ test('Usuario entra a agregar proyecto', async ({ page }) => {
   await page.waitForTimeout(3000);
   console.log('Ingreso correcto a Agregar un Proyecto');
 
-
-
 });
