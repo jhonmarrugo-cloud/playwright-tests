@@ -34,5 +34,6 @@ test('Agregar un nuevo proyecto', async ({ page }) => {
   // Guardar
   await page.getByRole('button', { name: 'Save' }).click();
   console.log('Se agregó proyecto correctamente');
-  
+
+  console.log('Prueba bloqueo main');
 });
