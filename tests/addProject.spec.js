@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 test('Agregar un nuevo proyecto', async ({ page }) => {
 
   test.setTimeout(120000);
-  await page.goto('https://clients.onewrapp.com/companies');
+  await page.goto('https://stgclients.onewrapp.com/companies');
 
   //Ingreso a compañia 525
   await page.waitForSelector('h1');
