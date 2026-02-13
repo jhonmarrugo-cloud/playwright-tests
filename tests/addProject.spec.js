@@ -10,12 +10,10 @@ test('Agregar un nuevo proyecto', async ({ page }) => {
   await page.click('text=525');
   console.log('Ingreso correcto a la compañia 525');
   
-
    //Ingreso a la pantalla "Agregar nuevo proyecto"
   await page.waitForSelector('h1');
   await page.getByRole('button', { name: 'Add new project' }).click();
   console.log('Ingreso a la pantalla "Agregar un Proyecto"');
-
   // Estado
   await page.click('#mat-select-value-3');
   await page.getByRole('option', { name: 'On production' }).click();
@@ -34,6 +32,5 @@ test('Agregar un nuevo proyecto', async ({ page }) => {
   // Guardar
   await page.getByRole('button', { name: 'Save' }).click();
   console.log('Se agregó proyecto correctamente');
-
   console.log('Prueba bloqueo');
 });
